@@ -1,14 +1,9 @@
 body {
   background-image: url("../images/bg2.jpg");
-  /*background-image: url('bg2.jpg');*/
-  /*background: url('images/bg2.jpg') no-repeat center fixed;*/
-  /*background-size: 90%;*/
   color: #000305;
   font-size: 87.5%;
   font-family: Arial, 'Lucida Sans Unicode';
-  /*line-height: 1.5;*/
   text-align: left;
-  /*margin: auto;*/
 }
 
 a {
@@ -75,6 +70,143 @@ hr {
   margin: -.8% 0 .5% 1%;
 }
 
+/* Documents */
+
+div.documents-container {
+  width: 97%;
+  font-size: .8em;
+  margin: 2.5% 0 0 0;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+    ul li {
+    padding: 0 5%;
+    // display: inline-block;
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+    a {
+      display: inline-block;
+      width: 60px;
+      text-align: center;
+      // display: none;
+    }
+  }
+}
+
+div ul li span.supertherm-tds-span {
+  font-size: .95em;
+  display: inline;
+  // width: 20%;
+  // margin-top: -50px;
+  text-align: center;
+  // display: none;
+}
+
+#supertherm-tds-pdf {
+  display: none;
+  embed {
+    height: 1030px;
+    margin: 3% 25%;
+    width: 50%;
+    // display: none;
+
+  }
+}
+
+// object {
+//   // visibility: hidden;
+//   display: none;
+// }
+
+
+/* Wobble Bottom */
+@-webkit-keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+@keyframes hvr-wobble-bottom {
+  16.65% {
+    -webkit-transform: skew(-12deg);
+    transform: skew(-12deg);
+  }
+
+  33.3% {
+    -webkit-transform: skew(10deg);
+    transform: skew(10deg);
+  }
+
+  49.95% {
+    -webkit-transform: skew(-6deg);
+    transform: skew(-6deg);
+  }
+
+  66.6% {
+    -webkit-transform: skew(4deg);
+    transform: skew(4deg);
+  }
+
+  83.25% {
+    -webkit-transform: skew(-2deg);
+    transform: skew(-2deg);
+  }
+
+  100% {
+    -webkit-transform: skew(0);
+    transform: skew(0);
+  }
+}
+
+.hvr-wobble-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+.hvr-wobble-bottom:hover, .hvr-wobble-bottom:focus, .hvr-wobble-bottom:active {
+  -webkit-animation-name: hvr-wobble-bottom;
+  animation-name: hvr-wobble-bottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
 
 
 div.mainContent-container {
@@ -250,7 +382,90 @@ div.mainContent-container {
   animation-direction: normal, alternate;
 }
 
+/* Database */
 
+.products-container {
+  font-size: 2.5em;
+  columns: 2;
+  margin: 2% 8% 3% 8%;
+  display: table;
+  h6 {
+    font-family: 'Arial';
+    font-weight: 300;
+    text-align: center;
+  }
+}
+
+.products-background {
+  position: fixed;
+  margin: 0 1% 0 20%;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.products-list {
+  font-size: 1.7em;
+}
+
+.thermal-list button {
+  background-color: rgba(134, 97, 16, 0.32);
+}
+
+.corrosion-list button {
+  background-color: rgba(134, 97, 16, 0.32);
+}
+
+.fire-list button {
+  background-color: rgba(149, 39, 4, 0.32);
+}
+
+.concrete-list button {
+  background-color: rgba(61, 61, 60, 0.32);
+}
+
+.graffiti-list button {
+  background-color: rgba(7, 4, 152, 0.32);
+}
+
+.hot-surface-name {
+  font-size: .7em;
+}
+
+.button {
+  padding: 0 5px;
+  font-size: .35em;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(134, 97, 16, 0.32);  border-radius: 25px;
+  box-shadow: 1px 10px 10px rgba(66, 66, 66, 0.7);
+  float: left;
+  width: 430px;
+  height: 90px;
+  margin: 2% 1% 1% 4%;
+  display: -webkit-flex; /* Safari */
+  display: flex;
+}
+  .button a {
+    font-size: 1em;
+    margin: .5% 0% 0 0;
+    -webkit-flex: 1;  /* Safari 6.1+ */
+    -ms-flex: 1;  /* IE 10 */
+    flex: 1;
+    float: left;
+  }
+  .button .description {
+    position: relative;
+    top: -7px;
+    float: right;
+    margin: 0 3% 0 0;
+    font-size: .45em;
+    font-style: italic;
+  }
+  .button i {
+    position: relative;
+    font-size: .5em;
+    top: 0;
+  }
 
 
 /*Footer*/
@@ -450,9 +665,7 @@ footer ul li {
 
 
 
-/* Product Css */
-
-/* Product css */
+/* Product Parallax */
 
 * {
   box-sizing: border-box;
@@ -578,7 +791,7 @@ img[src="/images/shadow-2.png"] {
 
 
 
-/* */
+/* Certifications */
 .supertherm-certifications-container {
 
 }
