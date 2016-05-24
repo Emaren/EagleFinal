@@ -79,28 +79,23 @@ div.documents-container {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-    ul li {
+}
+    div.documents-container ul li {
     padding: 0 5%;
-    // display: inline-block;
     width: 19%;
     display: inline-block;
     text-align: center;
-    a {
+  }
+    div.documents-container a {
       display: inline-block;
       width: 60px;
       text-align: center;
-      // display: none;
     }
-  }
-}
 
 div ul li span.supertherm-tds-span {
   font-size: .95em;
   display: inline;
-  // width: 20%;
-  // margin-top: -50px;
   text-align: center;
-  // display: none;
 }
 
 #supertherm-tds-pdf {
@@ -109,15 +104,8 @@ div ul li span.supertherm-tds-span {
     height: 1030px;
     margin: 3% 25%;
     width: 50%;
-    // display: none;
-
   }
 }
-
-// object {
-//   // visibility: hidden;
-//   display: none;
-// }
 
 
 /* Wobble Bottom */
@@ -498,9 +486,8 @@ div.p-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.p-footer-title {
-    position: relative;
-    top: -16px;
-    left: -15%;
+    position: absolute;
+    margin: -.8% 0 0 .1%;
     text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
     visibility: visible;
     opacity: 1;
@@ -514,13 +501,13 @@ div.c-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.c-footer-title {
-    position: relative;
-    top: -16px;
-    left: -8%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 -.1%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: left;
 }
 div.i-footer-title {
   font-size: .7em;
@@ -529,13 +516,13 @@ div.i-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.i-footer-title {
-    position: relative;
-    top: -16px;
-    left: -8%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 -.4%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 div.y-footer-title {
   font-size: .7em;
@@ -544,13 +531,13 @@ div.y-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.y-footer-title {
-    position: relative;
-    top: -16px;
-    left: 6.5%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 .25%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 div.t-footer-title {
   font-size: .7em;
@@ -559,13 +546,13 @@ div.t-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.t-footer-title {
-    position: relative;
-    top: -16px;
-    left: 10%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 .4%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 div.f-footer-title {
   font-size: .7em;
@@ -574,13 +561,13 @@ div.f-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.f-footer-title {
-    position: relative;
-    top: -16px;
-    left: 1%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 .1%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 div.e-footer-title {
   font-size: .7em;
@@ -589,13 +576,13 @@ div.e-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.e-footer-title {
-    position: relative;
-    top: -16px;
-    left: 8%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 .25%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 div.a-footer-title {
   font-size: .7em;
@@ -604,13 +591,13 @@ div.a-footer-title {
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.a-footer-title {
-    position: relative;
-    top: -16px;
-    left: 3%;
-    text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
-    visibility: visible;
-    opacity: 1;
-    overflow:hidden;
+  position: absolute;
+  margin: -.8% 0 0 .1%;
+  text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
+  visibility: visible;
+  opacity: 1;
+  overflow:hidden;
+  text-align: center;
 }
 
 .mainFooter img {
