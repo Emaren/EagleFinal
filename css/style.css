@@ -226,7 +226,7 @@ div.mainContent-container {
   box-shadow: 5px 7px 30px 3px rgba(74, 74, 74, 0.9);
 }
 .mainCon {
-  
+
 }
 
 .intro {
@@ -854,9 +854,11 @@ table ul li {
 }
 
 
-
+.centerText {
+  text-align: center;
+}
 
 video {
-  width: 20%    !important;
-  height: auto   !important;
+  width: 60%    !important;
+  /*height: auto   !important;*/
 }
