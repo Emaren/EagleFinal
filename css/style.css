@@ -390,11 +390,11 @@ div.mainContent-container {
   columns: 2;
   margin: 2% 8% 3% 8%;
   display: table;
-  h6 {
-    font-family: 'Arial';
-    font-weight: 300;
-    text-align: center;
-  }
+}
+.products-container h6 {
+  font-family: 'Arial';
+  font-weight: 300;
+  text-align: center;
 }
 
 .products-background {
@@ -468,6 +468,16 @@ div.mainContent-container {
     top: 0;
   }
 
+  .description-us {
+    font-size: .1em;
+    display: inline;
+    text-align: right;
+    padding: 0 0 0 3%;
+  }
+
+  #hot-surface-name {
+    font-size: .9em;
+  }
 
 /*Footer*/
 
@@ -663,6 +673,79 @@ footer ul li {
 
 
 
+.certified-contractors-container {
+  font-family: 'Poiret One', cursive;
+  font-size: 3em;
+  width: 90%;
+  margin: 3% 10% 0 7%;
+}
+
+.certified-contractors-background {
+  position: fixed;
+  margin: 1% 0 0 30%;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.certified-contractors {
+  text-align: center;
+  width: 80%;
+  margin: 4.5% 0 2.5% 10%;
+  font-family: 'Nunito', sans-serif;
+  font-size: .4em;
+  line-height: 150%;
+}
+
+.about-container {
+  font-family: 'Poiret One', cursive;
+  font-size: 3em;
+  width: 90%;
+  margin: 3% 10% 0 7%;
+}
+
+.about-us {
+  text-align: center;
+  width: 80%;
+  margin: 3% 0 4% 10%;
+  font-family: 'Nunito', sans-serif;
+  font-size: .4em;
+  line-height: 150%;
+}
+
+.about-background {
+  position: fixed;
+  margin: 1% 0 0 29.9%;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.payments-container {
+  font-family: 'Poiret One', cursive;
+  font-size: 3em;
+  width: 90%;
+  margin: 3% 10% 0 7%;
+}
+
+.payments-background {
+  position: fixed;
+  margin: 1% 0 0 30%;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.coming-soon {
+  font-size: .6em;
+  position: relative;
+  font-family: 'Poiret One';
+  margin: 10.7% 5% 8.9% .5%;
+  opacity: .8;
+  width: 92.5%;
+  text-align: center;
+}
+
+
+
+
 
 
 /* Product Parallax */
@@ -714,6 +797,7 @@ footer ul li {
   margin: 12.9% 0 0 5%;
   background-attachment: fixed;
   background-position: 2% 67%;
+  background-image: url("/images/supertherm-12.jpg");
 }
 .illustration1-1 {
   background-image: url("/images/.jpg");
