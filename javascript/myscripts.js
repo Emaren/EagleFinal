@@ -34,7 +34,7 @@ var prevAngle = 0;
 $(".phone").mouseenter(function(e) {
     prevAngle = angle
     angle -= 100;
-    $(this).animateRotate(angle, prevAngle, 250);
+    $(this).animateRotate(angle, prevAngle, 350);
     e.preventDefault();
     $(this).animate({
       left: "800px",
@@ -60,6 +60,26 @@ $(".phone").mouseleave(function(e) {
     });
     $(".phone-number").hide("slide", "easeInQuart", 300);
   });
+
+
+  $('.supertherm-tds').click(function(){
+    // $('#supertherm-tds-pdf').fadeIn(1000);
+    $('.supertherm-certifications-container').hide();
+    $('.supertherm-application-instructions-container').hide();
+    $('#supertherm-tds-pdf').show();
+  });
+
+  $('.supertherm-certifications').click(function(){
+    $('#supertherm-tds-pdf').hide();
+    $('.supertherm-certifications-container').show();
+  });
+
+  $('.supertherm-application-instructions').click(function(){
+    $('#supertherm-tds-pdf').hide();
+    $('.supertherm-certifications-container').hide();
+    $('.supertherm-application-instructions-container').show();
+  });
+
   });
 
 
@@ -67,15 +87,9 @@ $(".phone").mouseleave(function(e) {
 
 
 
-$('.supertherm-tds').click(function(){
-  // $('#supertherm-tds-pdf').fadeIn(1000);
-  $('#supertherm-tds-pdf').show();
-});
 
 
-$('.hello').click(function(){
-  alert("Hi");
-});
+
 
 
 

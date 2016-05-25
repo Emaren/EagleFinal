@@ -1,8 +1,8 @@
 body {
   background-image: url("../images/bg2.jpg");
   color: #000305;
-  font-size: 87.5%;
-  font-family: Arial, 'Lucida Sans Unicode';
+  font-size: 110% !important;
+  font-family: Arial, 'Lucida Sans Unicode' !important;
   text-align: left;
 }
 
@@ -40,7 +40,7 @@ a:hover, a:active {
   font-family: 'Raleway';
   font-weight: 600;
   float: left;
-  font-size: 1.4em;
+  font-size: 2.4em;
   display: inline;
   width: 17%;
 }
@@ -74,7 +74,7 @@ hr {
 
 div.documents-container {
   width: 97%;
-  font-size: .8em;
+  font-size: 1.1em;
   margin: 2.5% 0 0 0;
   text-align: center;
   display: inline-block;
@@ -101,12 +101,49 @@ div ul li span.supertherm-tds-span {
 .supertherm-tds {
   cursor: pointer;
 }
+.supertherm-certifications {
+  cursor: pointer;
+}
+.supertherm-certifications-container {
+  display: none;
+}
+.supertherm-project-pictures {
+  cursor: pointer;
+}
+.supertherm-project-videos {
+  cursor: pointer;
+}
+.supertherm-application-instructions {
+  cursor: pointer;
+}
+.supertherm-application-instructions-container {
+  display: none;
+}
+
+div.supertherm-application-instructions-container {
+  margin: 2% 10%;
+  font-size: 120%;
+  line-height: 190%;
+}
+  div.supertherm-application-instructions-container h3 {
+    font-size: 2em;
+  }
+  div.supertherm-application-instructions-container h4 em u {
+    // display: none
+  }
+  div.supertherm-application-instructions-container ul li {
+    list-style-position: inside;
+    text-indent: 0px;
+  }
+  div.supertherm-application-instructions-container p {
+    font-size: 1.1em;
+  }
 
 #supertherm-tds-pdf {
   display: none;
 }
 #supertherm-tds-pdf embed {
-  height: 1030px;
+  height: 1160px;
   margin: 3% 25%;
   width: 50%;
   /*display: none;*/
@@ -363,7 +400,7 @@ div.mainContent-container {
   transition-duration: 0.3s;
 }
 .hvr-icon-bob:before {
-  content: "\f077";
+  content: "";
   position: absolute;
   right: 1em;
   padding: 0 1px;
@@ -391,7 +428,7 @@ div.mainContent-container {
 /* Database */
 
 .products-container {
-  font-size: 2.5em;
+  font-size: 3.5em;
   columns: 2;
   margin: 2% 8% 3% 8%;
   display: table;
@@ -451,13 +488,14 @@ div.mainContent-container {
   display: -webkit-flex; /* Safari */
   display: flex;
 }
-  .button a {
+  .button p {
     font-size: 1em;
-    margin: .5% 0% 0 0;
+    margin: 0% 0% 0 0;
     -webkit-flex: 1;  /* Safari 6.1+ */
     -ms-flex: 1;  /* IE 10 */
     flex: 1;
-    float: left;
+    display:table-cell;
+    vertical-align:middle;
   }
   .button .description {
     position: relative;
@@ -469,9 +507,17 @@ div.mainContent-container {
   }
   .button i {
     position: relative;
-    font-size: .5em;
-    top: 0;
+    display: block;
+    font-size: .4em;
+    vertical-align: bottom;
   }
+  .button:hover {background-color: rgba(144, 144, 143, 0.32)}
+
+  /*.button:active {
+  background-color: rgba(134, 97, 16, 0.32);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}*/
 
   .description-us {
     font-size: .1em;
@@ -482,6 +528,25 @@ div.mainContent-container {
 
   #hot-surface-name {
     font-size: .9em;
+  }
+
+  .phone {
+  position: absolute;
+  top: 200px;
+  left: 915px;
+  cursor: pointer;
+  z-index: 100;
+  }
+
+  .phone-number {
+  position: absolute;
+  top: 225px;
+  left: 908px;
+  display: none;
+  cursor: pointer;
+  font-family: 'Open Sans';
+  font-size: 28px;
+  color: rgb(68, 69, 67);
   }
 
 /*Footer*/
@@ -873,15 +938,17 @@ footer ul li {
 h1,h2,h3,h4,h5,h6 {
 font-family: 'Roboto';
 line-height: 1.313em;
+
 }
 h1 {
 font-size: 3em;
 margin: 0.563em 0;
 }
 h2 {
-font-size: 2.25em;
+font-size: 3em;
 text-align: center;
 margin: 0.625em 0;
+font-weight: bolder;
 }
 h3 {
 font-size: 1em;
@@ -897,8 +964,9 @@ font-size: 1.125em;
 margin: 1.313em 0;
 }
 h6 {
-font-size: 1em;
+font-size: 1em !important;
 margin: 0.75em 0;
+width: 101%;
 }
 
 img[src="images/shadow-1.png"] {
