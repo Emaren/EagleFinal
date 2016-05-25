@@ -966,6 +966,52 @@ table ul li {
 }
 
 video {
-  width: 60%    !important;
+  width: 100%    !important;
   /*height: auto   !important;*/
+}
+
+#fire {
+  position: relative;
+  left: 225%;
+  display: none;
+}
+#thermal {
+  position: relative;
+  left: 7%;
+  display: none;
+}
+#co {
+  position: relative;
+  left: 117%;
+  display: none;
+}
+.imgC, .imgC1, .imgC2 {
+  width: 237px;
+  position: relative;
+  height: 188px;
+  margin-top: 55px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+
+div#carousel-example-generic {
+  width: 240px;
+}
+ol.carousel-indicators {
+  bottom: 70px;
+}
+
+.carousel-inner {
+  bottom: 70px;
+}
+
+.imageTitle {
+  background: #fff;
+  width: 237px;
+  text-align: center;
+  margin: 30px auto 15px;
 }
