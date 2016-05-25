@@ -74,11 +74,11 @@ $(document).ready(function() {
     this.paused?this.play():this.pause();
   });
 
-});
+// });
 
 $('.carousel').carousel({
     interval: 1000
-
+});
 
 $.fn.animateRotate = function(angle,prevAngle, duration, easing, complete) {
     var args = $.speed(duration, easing, complete);
@@ -125,7 +125,7 @@ $(".phone").mouseleave(function(e) {
     });
     $(".phone-number").hide("slide", "easeInQuart", 300);
   });
-  });
+});
 
 
 
