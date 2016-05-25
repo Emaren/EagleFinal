@@ -268,7 +268,7 @@ div.mainContent-container {
   box-shadow: 5px 7px 30px 3px rgba(74, 74, 74, 0.9);
 }
 .mainCon {
-
+  margin: 3% 0 0 0;
 }
 
 .intro {
@@ -945,10 +945,11 @@ font-size: 3em;
 margin: 0.563em 0;
 }
 h2 {
-font-size: 3em;
+font-size: 2.5em;
 text-align: center;
 margin: 0.625em 0;
-font-weight: bolder;
+font-weight: 100 !important;
+/*display: none;*/
 }
 h3 {
 font-size: 1em;
@@ -1051,6 +1052,59 @@ table ul li {
 }
 
 video {
-  width: 60%    !important;
+  width: 100%    !important;
   /*height: auto   !important;*/
+}
+
+#fire {
+  position: relative;
+  left: 225%;
+  display: none;
+}
+#thermal {
+  position: relative;
+  left: 7%;
+  display: none;
+}
+#co {
+  position: relative;
+  left: 117%;
+  display: none;
+}
+.imgC, .imgC1, .imgC2 {
+  width: 337px;
+  position: relative;
+  height: 288px;
+  margin-top: 55px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+
+
+div#carousel-example-generic {
+  width: 340px;
+}
+ol.carousel-indicators {
+  bottom: 70px;
+}
+
+.carousel-inner {
+  bottom: 70px;
+}
+
+.imageTitle {
+  background: #fff;
+  width: 337px;
+  height: 288px;
+  border: 1px solid black;
+  text-align: center;
+  margin: 1px auto 15px;
+  box-shadow: 2px 2px 40px black;
+}
+
+.row div {
+
 }
