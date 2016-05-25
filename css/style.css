@@ -7,11 +7,11 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:link, a:visited {
-  color: #000;
+  color: #000 !important;
 }
 
 a:hover, a:active {
@@ -63,11 +63,11 @@ a:hover, a:active {
 }
 
 hr {
-  display: block;
-  height: 1px;
-  border-top: 1px solid black;
-  width: 98%;
-  margin: -.8% 0 .5% 1%;
+  display: block !important;
+  height: 1px !important;
+  border-top: 1px solid black !important;
+  width: 98% !important;
+  margin: -.8% 0 .5% 1% !important;
 }
 
 /* Documents */
@@ -98,13 +98,18 @@ div ul li span.supertherm-tds-span {
   text-align: center;
 }
 
+.supertherm-tds {
+  cursor: pointer;
+}
+
 #supertherm-tds-pdf {
   display: none;
-  embed {
-    height: 1030px;
-    margin: 3% 25%;
-    width: 50%;
-  }
+}
+#supertherm-tds-pdf embed {
+  height: 1030px;
+  margin: 3% 25%;
+  width: 50%;
+  /*display: none;*/
 }
 
 
@@ -482,7 +487,22 @@ div.mainContent-container {
 /*Footer*/
 
 img[src="images/phone.png"] {
+  position: relative;
   margin: 3.5% 46.9% 4% 46.9%;
+  cursor: pointer;
+  display: inline;
+  z-index: +10;
+
+}
+
+img[src="images/phonenumber.png"] {
+  position: absolute;
+  left: 48%;
+  margin: -57% 0% 0% 8%;
+  /*display: inline;*/
+  display: none;
+  /*visibility: hidden;*/
+  /*z-index: -10;*/
 }
 
 .mainFooter {
@@ -490,7 +510,6 @@ img[src="images/phone.png"] {
 }
 
 div.p-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
@@ -505,14 +524,13 @@ a:hover + div.p-footer-title {
     text-align: center;
 }
 div.c-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.c-footer-title {
   position: absolute;
-  margin: -.8% 0 0 -.1%;
+  margin: -.8% 0 0 0%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -520,14 +538,13 @@ a:hover + div.c-footer-title {
   text-align: left;
 }
 div.i-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.i-footer-title {
   position: absolute;
-  margin: -.8% 0 0 -.4%;
+  margin: -.8% 0 0 -.3%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -535,14 +552,13 @@ a:hover + div.i-footer-title {
   text-align: center;
 }
 div.y-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.y-footer-title {
   position: absolute;
-  margin: -.8% 0 0 .25%;
+  margin: -.8% 0 0 .3%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -550,14 +566,13 @@ a:hover + div.y-footer-title {
   text-align: center;
 }
 div.t-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.t-footer-title {
   position: absolute;
-  margin: -.8% 0 0 .4%;
+  margin: -.8% 0 0 .45%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -565,14 +580,13 @@ a:hover + div.t-footer-title {
   text-align: center;
 }
 div.f-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.f-footer-title {
   position: absolute;
-  margin: -.8% 0 0 .1%;
+  margin: -.8% 0 0 .2%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -580,14 +594,13 @@ a:hover + div.f-footer-title {
   text-align: center;
 }
 div.e-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.e-footer-title {
   position: absolute;
-  margin: -.8% 0 0 .25%;
+  margin: -.8% 0 0 .35%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -595,14 +608,13 @@ a:hover + div.e-footer-title {
   text-align: center;
 }
 div.a-footer-title {
-  font-size: .7em;
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s, opacity 2s linear;
 }
 a:hover + div.a-footer-title {
   position: absolute;
-  margin: -.8% 0 0 .1%;
+  margin: -.8% 0 0 .2%;
   text-shadow: 1px 1px rgba(#4b4b4b, 0.54);
   visibility: visible;
   opacity: 1;
@@ -671,7 +683,7 @@ footer ul li {
   transform: translateY(5px);
 }
 
-
+/* Pay, Contractors, Industry, About */
 
 .certified-contractors-container {
   font-family: 'Poiret One', cursive;
@@ -778,8 +790,11 @@ footer ul li {
   margin: auto;
 }
 
-.mainContainer {
-  margin-top: -150px;
+.mainContainer p {
+  /*margin-top: -150px;*/
+  font-size: 1.5em;
+  /*display: none;*/
+  padding: 30px;
 }
 
 .main-parallax {
@@ -817,30 +832,31 @@ footer ul li {
 
 .illustration1  {
   width: 92%;
-  margin: 12.9% 0 0 5%;
+  margin: 10% 0 0 5%;
   background-attachment: fixed;
   background-position: 2% 67%;
-  background-image: url("/images/supertherm-12.jpg");
+  background-image: url("../images/supertherm-12.jpg");
+  z-index: -10;
 }
 .illustration1-1 {
-  background-image: url("/images/.jpg");
+  background-image: url("../images/.jpg");
 }
 
 .illustration2{
   margin: 0 0 0 0;
   background-color: rgba(129, 80, 16, 0.69);
-  background-image: url("/images/tc4.jpeg");
+  background-image: url("../images/tc4.jpeg");
 }
 
 .illustration3 {
   margin: 0 0 0 0;
   background-color: grey;
-  background-image: url("/images/rg-10.jpeg");
+  background-image: url("../images/rg-10.jpg");
 }
 .illustration4{
   margin: 0 0 0 0;
   background-color: white;
-  background-image: url("/images/rg-4.jpg");
+  background-image: url("../images/rg-4.jpg");
 }
 
 .right {
@@ -885,10 +901,11 @@ font-size: 1em;
 margin: 0.75em 0;
 }
 
-img[src="/images/shadow-1.png"] {
+img[src="images/shadow-1.png"] {
+  position: relative;
   float: left;
+  margin: -.05% 0 0 2%;
   background-position: 0 50%;
-
   width: 50%;
   z-index: 1000;
 }
