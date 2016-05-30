@@ -128,23 +128,40 @@ $(".phone").mouseleave(function(e) {
 
 
 
-  $('.supertherm-tds').click(function(){
+  $('.tds').click(function(){
     // $('#supertherm-tds-pdf').fadeIn(1000);
-    $('.supertherm-certifications-container').hide();
-    $('.supertherm-application-instructions-container').hide();
-    $('#supertherm-tds-pdf').show();
+    $('.certifications-container').hide();
+    $('.application-instructions-container').hide();
+    $('#tds-pdf').show();
   });
 
 
-  $('.supertherm-certifications').click(function(){
-    $('#supertherm-tds-pdf').hide();
-    $('.supertherm-certifications-container').show();
+  $('.certifications').click(function(){
+    $('.certifications-container').show();
+    $('.mainContainer').hide();
+    $('#tds-pdf').hide();
+    $('.application-instructions-container').hide();
+    $('.project-videos-container').hide();
+  });
+  $('.project-pictures').click(function(){
+    $('.mainContainer').hide();
+    $('#tds-pdf').hide();
+    $('.application-instructions-container').hide();
+    $('.certifications-container').hide();
+    $('.project-videos-container').hide();
+  });
+  $('.project-videos').click(function(){
+    $('.mainContainer').hide();
+    $('#tds-pdf').hide();
+    $('.application-instructions-container').hide();
+    $('.certifications-container').hide();
+    $('.project-videos-container').hide();
   });
 
-  $('.supertherm-application-instructions').click(function(){
-    $('#supertherm-tds-pdf').hide();
-    $('.supertherm-certifications-container').hide();
-    $('.supertherm-application-instructions-container').show();
+  $('.application-instructions').click(function(){
+    $('#tds-pdf').hide();
+    $('.certifications-container').hide();
+    $('.application-instructions-container').show();
   });
 
   });

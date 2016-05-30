@@ -1,5 +1,6 @@
 body {
   background-image: url("../images/bg2.jpg");
+   background-attachment: fixed;
   color: #000305;
   font-size: 110% !important;
   font-family: Arial, 'Lucida Sans Unicode' !important;
@@ -92,57 +93,42 @@ div.documents-container {
       text-align: center;
     }
 
-div ul li span.supertherm-tds-span {
+/*div ul li span.supertherm-tds-span {
   font-size: .95em;
   display: inline;
   text-align: center;
-}
+}*/
 
-.supertherm-tds {
+.tds {
   cursor: pointer;
 }
-.supertherm-certifications {
+.certifications {
   cursor: pointer;
 }
-.supertherm-certifications-container {
+.certifications-container {
+  margin: 2% 0;
   display: none;
 }
-.supertherm-project-pictures {
+.project-pictures {
   cursor: pointer;
 }
-.supertherm-project-videos {
+.project-videos {
   cursor: pointer;
 }
-.supertherm-application-instructions {
+.application-instructions {
   cursor: pointer;
 }
-.supertherm-application-instructions-container {
+.application-instructions-container {
   display: none;
-}
-
-div.supertherm-application-instructions-container {
   margin: 2% 10%;
-  font-size: 120%;
+  /*font-size: 120%;*/
   line-height: 190%;
 }
-  div.supertherm-application-instructions-container h3 {
-    font-size: 2em;
-  }
-  div.supertherm-application-instructions-container h4 em u {
-    // display: none
-  }
-  div.supertherm-application-instructions-container ul li {
-    list-style-position: inside;
-    text-indent: 0px;
-  }
-  div.supertherm-application-instructions-container p {
-    font-size: 1.1em;
-  }
 
-#supertherm-tds-pdf {
+#tds-pdf {
   display: none;
 }
-#supertherm-tds-pdf embed {
+#tds-pdf embed {
   height: 1160px;
   margin: 3% 25%;
   width: 50%;
@@ -897,7 +883,7 @@ footer ul li {
 
 .illustration1  {
   width: 92%;
-  margin: 10% 0 0 5%;
+  margin: 2% 0 0 5%;
   background-attachment: fixed;
   background-position: 2% 67%;
   background-image: url("../images/supertherm-12.jpg");
@@ -945,16 +931,16 @@ font-size: 3em;
 margin: 0.563em 0;
 }
 h2 {
-font-size: 2.5em;
+font-size: 3em !important;
 text-align: center;
 margin: 0.625em 0;
 font-weight: 100 !important;
 /*display: none;*/
 }
 h3 {
-font-size: 1em;
-margin: 1.313em 0;
-text-align: center;
+font-size: 1em !important;
+margin: 1.313em 0 !important;
+text-align: center !important;
 }
 h4 {
 font-size: 1.313em;
@@ -1102,6 +1088,7 @@ ol.carousel-indicators {
   border: 1px solid black;
   text-align: center;
   margin: 1px auto 15px;
+  padding: 1.5%;
   box-shadow: 2px 2px 40px black;
 }
 
