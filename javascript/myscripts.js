@@ -139,7 +139,6 @@ $(".phone").mouseleave(function(e) {
 
   $('.certifications').click(function(){
     $('.certifications-container').show();
-    $('.mainContainer').hide();
     $('#tds-pdf').hide();
     $('.application-instructions-container').hide();
     $('.project-videos-container').hide();
