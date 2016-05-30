@@ -34,15 +34,16 @@ $(document).ready(function() {
   });
 
   $(".carousel.rightCar").click(function(){
-    $(".thermalCol").fadeOut(2000);
-    $(".coCol").fadeOut(2000);
+    $(".thermalCol").fadeOut();
+    $(".coCol").fadeOut();
+    // $(".coCol").css({'display': 'none'}, 1000);
     $(".fireCol").animate({
         right: "34%"
     }, 1000, function()
           {
-              $(".carousel.rightCar").css({'display': 'none'}, 3000);
-              $(".imageTitle").css({'display': 'none'}, 3000);
-              $("#fire").css({'display': 'block'}, 3000);
+              $(".carousel.rightCar").css({'display': 'none'}, 1000);
+              $(".imageTitle").css({'display': 'none'}, 1000);
+              $("#fire").css({'display': 'block'}, 9000);
           });
           $(".intro").hide(400);
           $(".footerContent").hide(100);
@@ -54,21 +55,21 @@ $(document).ready(function() {
   });
 
   $(".carousel.middleCar").click(function(){
-    $(".thermalCol").fadeOut(2000);
-    $(".fireCol").fadeOut(2000);
+    $(".thermalCol").fadeOut(100);
+    $(".fireCol").fadeOut(100);
     // $(".coCol").fadeOut(3000);
     $(".coCol").animate({
         right: ""
-    }, 2000, function()
+    }, 100, function()
           {
-              $(".carousel.middleCar").css({'display': 'none'}, 3000);
-              $(".imageTitle").css({'display': 'none'}, 3000);
-              $("#co").css({'display': 'block'}, 3000);
+              $(".carousel.middleCar").css({'display': 'none'}, 1000);
+              $(".imageTitle").css({'display': 'none'}, 1000);
+              $("#co").css({'display': 'block'}, 1000);
           });
           $(".intro").hide(400);
-          $(".footerContent").hide(100);
-          $(".spi-certified").hide(100);
-          $(".chat").hide(100);
+          $(".footerContent").hide(500);
+          $(".spi-certified").hide(500);
+          $(".chat").hide(500);
   });
   $('#co').click(function(){
     this.paused?this.play():this.pause();
