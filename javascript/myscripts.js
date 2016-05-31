@@ -17,7 +17,7 @@ $(document).ready(function() {
     $(".coCol").fadeOut(800);
     $(".thermalCol").animate({
       left: "34%",
-    }, 2000, function()
+    }, 700, function()
           {
               $(".carousel.leftCar").css({'display': 'none'}, 3000);
               $(".imageTitle").css({'display': 'none'}, 3000);
