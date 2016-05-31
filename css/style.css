@@ -483,34 +483,31 @@ footer ul li {
 /* Pay, Contractors, Industry, About */
 
 .certified-contractors-container {
-  font-family: 'Poiret One', cursive;
-  font-size: 3em;
+  font: 3.5em 'Dosis';
   width: 90%;
   margin: 3% 10% 0 7%;
 }
 
+.certified-contractors {
+  text-align: center;
+  width: 75%;
+  margin: 5.5% 0 2.5% 10%;
+  font: 500 .44em 'Helvetica';
+  line-height: 150%;
+}
+
 .certified-contractors-background {
   position: absolute;
-  /*width: 20%;*/
   text-align: center;
   padding: 1% 34.5%;
-  /*margin: 1% 34%;*/
   opacity: 0.05;
   z-index: 1;
 }
 
-.certified-contractors {
-  text-align: center;
-  width: 80%;
-  margin: 4.5% 0 2.5% 10%;
-  font-family: 'Nunito', sans-serif;
-  font-size: .4em;
-  line-height: 150%;
-}
 
 .about-container {
-  font-family: 'Poiret One', cursive;
-  font-size: 3em;
+  font-size: 3.5em;
+  font-family: 'Dosis';
   width: 90%;
   margin: 3% 10% 0 7%;
 }
@@ -518,11 +515,11 @@ footer ul li {
 .about-us {
   text-align: center;
   width: 80%;
-
   margin: 3% 0 4% 10%;
   font-family: 'Nunito', sans-serif;
-  font-size: .4em;
+  /*font-size: .4em;*/
   line-height: 150%;
+  font-size: .39em;
 }
 
 .about-background {
@@ -535,7 +532,7 @@ footer ul li {
 }
 
 .payments-container {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Dosis';
   font-size: 3em;
   width: 90%;
   margin: 3% 10% 0 7%;
@@ -561,7 +558,7 @@ footer ul li {
 }
 
 .industry-links-container {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Dosis';
   font-size: 3em;
   width: 90%;
   margin: 3% 10% 0 7%;
@@ -581,8 +578,9 @@ footer ul li {
   width: 80%;
   margin: 2% 0 3.05% 10%;
   font-family: 'Nunito', sans-serif;
-  font-size: .4em;
+  /*font-size: .4em;*/
   line-height: 150%;
+  font-size: .39em;
 }
 
 /* Product Parallax */
@@ -896,6 +894,16 @@ ol.carousel-indicators {
 
 .row div {
 
+}
+
+.thermal-parallax {
+  display: none;
+}
+.corrosion-parallax {
+  display: none;
+}
+.fire-parallax {
+  display: none;
 }
 
 

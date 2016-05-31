@@ -164,10 +164,18 @@ $(".phone").mouseleave(function(e) {
     $('.application-instructions-container').show();
   });
 
-  });
 
+$('.thermalCol').click(function(){
+  $('.thermal-parallax').show();
+});
+$('.fireCol').click(function(){
+  $('.fire-parallax').show();
+});
+$('.coCol').click(function(){
+  $('.corrosion-parallax').show();
+});
 
-
+});
 
 
 
