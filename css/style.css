@@ -851,7 +851,7 @@ video {
 #fire {
   position: relative;
   /*left: 225%;*/
-  left: 307%;
+  left: 0%;
   display: none;
 }
 #thermal {
