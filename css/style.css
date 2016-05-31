@@ -842,9 +842,14 @@ video {
   /*height: auto   !important;*/
 }
 
+.fireCol {
+  float: right;
+}
+
 #fire {
   position: relative;
-  left: 225%;
+  /*left: 225%;*/
+  left: 0%;
   display: none;
 }
 #thermal {
@@ -861,7 +866,7 @@ video {
   width: 337px;
   position: relative;
   height: 288px;
-  margin-top: 55px;
+  /*margin-top: 55px;*/
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -872,13 +877,19 @@ video {
 
 div#carousel-example-generic {
   width: 340px;
+  height: 305px;
 }
 ol.carousel-indicators {
-  bottom: 70px;
+  bottom: 21px;
 }
 
 .carousel-inner {
-  bottom: 70px;
+  bottom: 253px;
+  width: 97%;
+}
+
+.carousel-inner>.item > img {
+  height: 235px;
 }
 
 .imageTitle {
