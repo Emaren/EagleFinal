@@ -151,6 +151,9 @@ div.mainContent-container {
   border: 1px solid black;
   box-shadow: 5px 7px 30px 3px rgba(74, 74, 74, 0.9);
 }
+.col-xs-12 {
+  /*margin: 0 5%;*/
+}
 .mainContent-container video {
   position: relative;
   left: 6%;
@@ -162,12 +165,15 @@ div.mainContent-container {
   box-shadow: 5px 7px 30px 3px rgba(74, 74, 74, 0.9);
 }
 .mainCon {
+  position: relative;
+  left: -1%;
   margin: 3% 0 0 0;
 }
 
 .intro {
   padding: .1% 5% 0 5%;
   /*width: 90%;*/
+  margin-top: 4%;
   text-align: center;
   font-size: 1.8em;
   font-family: 'Raleway';
@@ -865,7 +871,7 @@ video {
 .imgC, .imgC1, .imgC2 {
   width: 337px;
   position: relative;
-  height: 288px;
+  /*height: 288px;*/
   /*margin-top: 55px;*/
 }
 
@@ -893,18 +899,21 @@ ol.carousel-indicators {
 }
 
 .imageTitle {
+  /*position: absolute;*/
   background: #fff;
+  font-size: 1.5em;
+  font-weight: 500;
   width: 337px;
   height: 288px;
   border: 1px solid black;
   text-align: center;
   margin: 1px auto 15px;
   padding: 1.5%;
-  box-shadow: 2px 2px 40px black;
+  box-shadow: 5px 5px 60px black;
 }
 
-.row div {
-
+.row {
+  margin: 2% 8%;
 }
 
 .thermal-parallax {
