@@ -79,9 +79,17 @@ $(document).ready(function() {
 
 // });
 
-$('.carousel').carousel({
-    interval: 3000
-});
+// $('.carousel').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 100,
+//   fade: true,
+//   cssEase: 'linear'
+// });
+
+// $('.carousel').carousel({
+//     interval: 100;
+// });
 
 $.fn.animateRotate = function(angle,prevAngle, duration, easing, complete) {
     var args = $.speed(duration, easing, complete);
