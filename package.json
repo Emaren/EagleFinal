@@ -1,0 +1,26 @@
+{
+  "name": "eaglefinal",
+  "version": "1.0.0",
+  "description": "eaglewebsite",
+  "main": "index.html",
+  "scripts": {
+    "test": "nope"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emaren/EagleFinal.git"
+  },
+  "keywords": [
+    "ceramic"
+  ],
+  "author": "Tony Blum",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Emaren/EagleFinal/issues"
+  },
+  "homepage": "https://github.com/Emaren/EagleFinal#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
