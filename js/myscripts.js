@@ -22,13 +22,13 @@ $(document).ready(function() {
               $(".carousel.leftCar").css({'display': 'none'}, 3000);
               $(".imageTitle").css({'display': 'none'}, 3000);
               $("#thermal").css({'display': 'block'}, 3000);
+              $(".thermal-parallax").css({'display': 'block'}, 3000);
           });
           $(".intro").hide(400);
           $(".footerContent").hide(100);
           $(".spi-certified").hide(100);
           $(".chat").hide(100);
   });
-
   $('#thermal').click(function(){
     this.paused?this.play():this.pause();
   });
@@ -54,21 +54,21 @@ $(document).ready(function() {
   });
 
   $(".carousel.middleCar").click(function(){
-    $(".thermalCol").fadeOut(100);
-    $(".fireCol").fadeOut(100);
-    // $(".coCol").fadeOut(3000);
+    $(".thermalCol").fadeOut(800);
+    $(".fireCol").fadeOut(800);
     $(".coCol").animate({
-        right: ""
-    }, 100, function()
+        right: "1px",
+    }, 700, function()
           {
-              $(".carousel.middleCar").css({'display': 'none'}, 1000);
-              $(".imageTitle").css({'display': 'none'}, 1000);
-              $("#co").css({'display': 'block'}, 1000);
+              $(".carousel.middleCar").css({'display': 'none'}, 3000);
+              $(".imageTitle").css({'display': 'none'}, 3000);
+              $("#co").css({'display': 'block'}, 3000);
+              $(".co-parallax").css({'display': 'block'}, 1000);
           });
           $(".intro").hide(400);
-          $(".footerContent").hide(500);
-          $(".spi-certified").hide(500);
-          $(".chat").hide(500);
+          $(".footerContent").hide(100);
+          $(".spi-certified").hide(100);
+          $(".chat").hide(100);
   });
   $('#co').click(function(){
     this.paused?this.play():this.pause();
@@ -108,7 +108,7 @@ $(".phone").mouseenter(function(e) {
     $(this).animateRotate(angle, prevAngle, 350);
     e.preventDefault();
     $(this).animate({
-      left: "800px",
+      left: "-7%",
       opacity: 1
     }, {
       duration: 300,
@@ -178,6 +178,16 @@ $('.fireCol').click(function(){
 });
 $('.coCol').click(function(){
   $('.corrosion-parallax').show();
+});
+
+var amountScrolled = 2000;
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > amountScrolled ) {
+		$('a.back-to-top').fadeIn('slow');
+	} else {
+		$('a.back-to-top').fadeOut('slow');
+	}
 });
 
 });

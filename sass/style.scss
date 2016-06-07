@@ -39,6 +39,7 @@ a:hover, a:active {
   font-size: 1.8em;
   display: inline;
   width: 17%;
+  margin: 0 0 .2% 0;
 }
 
 .mainHeader .search {
@@ -52,8 +53,14 @@ a:hover, a:active {
 
 .product-inventory {
   float: right;
-  margin: -2.5% 3.4% 0 0%;
+  margin: -3.3% 3.4% 0 0%;
   clear: both;
+  p {
+    font-size: 90%;
+    margin: 0 0 -1% 0;
+    font-family: Arial;
+    // font-weight: bold;
+  }
 }
 
 hr {
@@ -111,7 +118,17 @@ body,
   text-align: center;
 }
 
-video {
+.thermalCol video {
+  position: relative;
+  left: -25%;
+}
+.coCol video {
+  position: relative;
+  left: 85%;
+}
+.fireCol video {
+  position: relative;
+  left: -25%;
 }
 
 .fireCol {
@@ -120,17 +137,14 @@ video {
 
 #fire {
   position: relative;
-mmargin: 0 50%;
   display: none;
 }
 #thermal {
   position: relative;
-  margin: 0 0%;
   display: none;
 }
 #co {
   position: relative;
-margin: 0 50%;
   display: none;
 }
 .imgC, .imgC1, .imgC2 {
@@ -176,7 +190,7 @@ ol.carousel-indicators {
   overflow: hidden;
   position: relative;
   background: #fff;
-  font-size: 1.4em;
+  font-size: 1.6em;
   font-weight: 500;
   width: 332px;
   height: 288px;
@@ -190,19 +204,6 @@ ol.carousel-indicators {
 
 .row {
   margin: 4% 17% .1% 17%;
-}
-
-.thermal-parallax {
-  display: none;
-  p {
-    font-size: 2em !important;
-  }
-}
-.corrosion-parallax {
-  display: none;
-}
-.fire-parallax {
-  display: none;
 }
 
 .intro {
@@ -466,6 +467,68 @@ div.documents-container {
 }
 
 
+// Certifications
+
+.supertherm-certifications-container {
+}
+
+
+table {
+  width: 90%;
+  font-size: 1.1em;
+}
+
+td.before-message {
+  height: 5px;
+  display: none;
+}
+
+.five-message {
+  width: 100%;
+  font-weight: 600;
+}
+
+table tr {
+}
+
+table tr th {
+  height: 100px;
+}
+
+table tr td img {
+  height: 100px;
+  margin: 0 5% 0 5%;
+}
+
+table tr td:nth-child(1) {
+  width: 15%;
+  padding: 0 0;
+  height: auto;
+  line-height: 100%;
+  text-align: center;
+}
+table tr td:nth-child(2) {
+  width: 75%;
+  padding: 0 5%;
+  height: 50px;
+}
+table tr td:nth-child(3) {
+  width: 10%;
+  padding: 0 5%;
+  height: 50px;
+}
+table tr td:hover {
+  background-color: rgba(134, 97, 16, 0.32);
+  border-radius: 50px;
+  cursor: pointer;
+}
+table tr td:nth-child(3) {
+  text-align: center;
+}
+table ul li {
+  list-style: none;
+}
+
 // Database
 
 .products-container {
@@ -525,11 +588,22 @@ div.documents-container {
   line-height: 100%;
   height: 90px;
   margin: 2% 1% 1% 4%;
-  display: -webkit-flex; /* Safari */
+  -webkit-flex: 1; /* Safari 6.1+ */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
   outline: none;
-  display: flex;
-}
-  .button p {
+  .description {
+    position: relative;
+    float: right;
+    line-height: 50%;
+    margin: -2.4% 3% 0 0;
+    font-size: .5em;
+    font-style: italic;
+  }
+  h4 {
+    line-height: 90%;
+  }
+  p {
     font-size: 1em;
     margin: 0% 0% 0 0;
     -webkit-flex: 1;  /* Safari 6.1+ */
@@ -539,22 +613,15 @@ div.documents-container {
     line-height: 100%;
     vertical-align:middle;
   }
-  .button .description {
-    position: relative;
-    float: right;
-    line-height: 100%;
-    margin: -3% 3% 0 0;
-    font-size: .5em;
-    font-style: italic;
-  }
-  .button i {
+  i {
     position: relative;
     display: block;
     line-height: 100%;
     font-size: .55em;
     vertical-align: top;
   }
-  .button:hover {background-color: rgba(144, 144, 143, 0.32)}
+}
+.button:hover {background-color: rgba(144, 144, 143, 0.32)}
 
   .description-us {
     font-size: .1em;
@@ -563,25 +630,25 @@ div.documents-container {
     padding: 0 0 0 3%;
   }
 
-  .double-line {
-    padding: 0 5px;
-    cursor: pointer;
-    text-align: center;
-    background-color: rgba(134, 97, 16, 0.32);  border-radius: 25px;
-    box-shadow: 1px 10px 10px rgba(66, 66, 66, 0.7);
-    float: left;
-    width: 430px;
-    line-height: 100%;
-    height: 90px;
-    margin: 2% 1% 1% 4%;
-    outline: none;
-    h4 {
-      width: 130%;
-    }
-    i {
-      width: 130%;
-    }
-  }
+  // .double-line {
+  //   padding: 0 5px;
+  //   cursor: pointer;
+  //   text-align: center;
+  //   background-color: rgba(134, 97, 16, 0.32);  border-radius: 25px;
+  //   box-shadow: 1px 10px 10px rgba(66, 66, 66, 0.7);
+  //   float: left;
+  //   width: 430px;
+  //   line-height: 100%;
+  //   height: 90px;
+  //   margin: 2% 1% 1% 4%;
+  //   outline: none;
+  //   h4 {
+  //     width: 130%;
+  //   }
+  //   i {
+  //     width: 130%;
+  //   }
+  // }
 
   #hot-surface-name {
     font-size: .9em;
@@ -684,17 +751,64 @@ div.documents-container {
   font-size: .39em;
 }
 
+.mainContainer p {
+  font-size: 1.9em;
+  padding: 30px;
+}
+
 
 // Product Parallax
+
+.thermal-parallax {
+  display: none;
+  margin-top: 5%;
+    p {
+      font-size: 3em !important;
+      width:27em;
+      text-align:justify;
+      }
+    p:after {/* this adds an extra invisible line, so any other line is justified */
+      content:'';
+      display:inline-block;
+      width:100%;
+      vertical-align:top;
+      }
+}
+.corrosion-parallax {
+  display: none;
+  margin-top: 5%;
+  p {
+    font-size: 3em !important;
+  }
+}
+.fire-parallax {
+  display: none;
+  margin-top: 5%;
+  p {
+    font-size: 3em !important;
+  }
+}
+
+.right-main {
+  padding: 1em 1em 1em 39%;
+  background-position: 0% 50%;
+}
+
+.right {
+  width: 100%;
+  padding: 1em 10em 1em 49%;
+  margin: 1% 1% 1% 1%;
+  background-position: 0 50%;
+}
+
+.left {
+  padding: 1em 55% 1em 10em;
+  background-position: 100% 40%;
+}
 
 * {
   box-sizing: border-box;
   margin: auto;
-}
-
-.mainContainer p {
-  font-size: 1.9em;
-  padding: 30px;
 }
 
 .main-parallax {
@@ -726,13 +840,7 @@ div.documents-container {
   text-align: center;
 }
 
-.right-main {
-  padding: 1.6em 7em 0em 52%;
-  background-position: 26% 51%;
-}
-
 .supertherm-1  {
-  width: 92%;
   margin: 2% 0 0 5%;
   background-attachment: fixed;
   background-position: 2% 67%;
@@ -745,7 +853,11 @@ div.documents-container {
   background-image: url("../images/tc4.jpeg");
 }
 .supertherm-3 {
+  background-attachment: fixed;
+  background-position: 0% 57%;
+  z-index: -10;
   margin: 0 0 0 0;
+  // padding: 0 0 0 5%;
   background-color: grey;
   background-image: url("../images/rg-10.jpg");
 }
@@ -807,26 +919,19 @@ div.documents-container {
   background-image: url("../images/.jpg");
 }
 
-.right {
-  padding: 1em 1em 1em 50%;
-  background-position: 0 50%;
-}
-
-.left {
-  padding: 1em 50% 1em 1em;
-  background-position: 100% 40%;
-}
-
 h1,h2,h3,h4,h5,h6 {
 font-family: 'Roboto';
 line-height: 1.313em;
 
 }
 h1 {
-font-size: 3em;
-margin: 0.563em 0;
+font-size: 5em;
+// text-align: center;
+font-family: 'Raleway';
+// margin: 0.563em 0;
 }
 h2 {
+  font-family: Arial;
   text-align: center;
 }
 h3 {
@@ -837,10 +942,12 @@ h3 {
   font-size: 1.1em;
 }
 h4 {
-font-size: 1em !important;
+font-size: 2em !important;
+font-family: 'Raleway';
 margin: 1.313em 0;
 }
 h5 {
+  font-family: "Trajan Pro";
 font-size: 1.125em;
 margin: 1.313em 0;
 }
@@ -864,67 +971,24 @@ img[src="/images/shadow-2.png"] {
   margin: 1px 1px;
 }
 
+// Back to Top
 
-// Certifications
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+  left: 5px;
+	bottom: 5px;
+	background: url("../images/up.png") no-repeat center 1%;
+  transition: background-image 1s ease-in-out;
 
-.supertherm-certifications-container {
 }
+a:hover.back-to-top {
+  background: url("../images/up2.png") no-repeat center 1%;
 
-
-table {
-  width: 90%;
-  font-size: 1.1em;
-}
-
-td.before-message {
-  height: 5px;
-  display: none;
-}
-
-.five-message {
-  width: 100%;
-  font-weight: 600;
-}
-
-table tr {
-}
-
-table tr th {
-  height: 100px;
-}
-
-table tr td img {
-  height: 100px;
-  margin: 0 5% 0 5%;
-}
-
-table tr td:nth-child(1) {
-  width: 15%;
-  padding: 0 0;
-  height: auto;
-  line-height: 100%;
-  text-align: center;
-}
-table tr td:nth-child(2) {
-  width: 75%;
-  padding: 0 5%;
-  height: 50px;
-}
-table tr td:nth-child(3) {
-  width: 10%;
-  padding: 0 5%;
-  height: 50px;
-}
-table tr td:hover {
-  background-color: rgba(134, 97, 16, 0.32);
-  border-radius: 50px;
-  cursor: pointer;
-}
-table tr td:nth-child(3) {
-  text-align: center;
-}
-table ul li {
-  list-style: none;
 }
 
 
