@@ -33,12 +33,34 @@ $(document).ready(function() {
     this.paused?this.play():this.pause();
   });
 
+  $(".carousel.middleCar").click(function(){
+    $(".thermalCol").fadeOut(800);
+    $(".carousel-indicators,.carousel-inner").fadeOut(800);
+    $(".fireCol").fadeOut(800);
+    $(".coCol").animate({
+      right: "0px"
+    }, 700, function()
+    {
+      $(".carousel.middleCar").css({'display': 'none'}, 3000);
+      $(".imageTitle").css({'display': 'none'}, 3000);
+      $("#co").css({'display': 'block'}, 3000);
+      $(".corrosion-parallax").css({'display': 'block'}, 1000);
+    });
+    $(".intro").hide(400);
+    $(".footerContent").hide(100);
+    $(".spi-certified").hide(100);
+    $(".chat").hide(100);
+  });
+  $('#co').click(function(){
+    this.paused?this.play():this.pause();
+  });
+
   $(".carousel.rightCar").click(function(){
     $(".thermalCol").fadeOut(800);
     $(".coCol").fadeOut(800);
     $(".fireCol").animate({
       right: "34%",
-    },700, function(){
+    }, 700, function(){
         $(".carousel.rightCar").css({'display': 'none'}, 3000);
         $(".imageTitle").css({'display': 'none'}, 3000);
         $("#fire").css({'display': 'block'}, 3000);
@@ -53,26 +75,6 @@ $(document).ready(function() {
     this.paused?this.play():this.pause();
   });
 
-  $(".carousel.middleCar").click(function(){
-    $(".thermalCol").fadeOut(800);
-    $(".fireCol").fadeOut(800);
-    $(".coCol").animate({
-        right: "1px",
-    }, 700, function()
-          {
-              $(".carousel.middleCar").css({'display': 'none'}, 3000);
-              $(".imageTitle").css({'display': 'none'}, 3000);
-              $("#co").css({'display': 'block'}, 3000);
-              $(".co-parallax").css({'display': 'block'}, 1000);
-          });
-          $(".intro").hide(400);
-          $(".footerContent").hide(100);
-          $(".spi-certified").hide(100);
-          $(".chat").hide(100);
-  });
-  $('#co').click(function(){
-    this.paused?this.play():this.pause();
-  });
 
 
 // });
@@ -169,17 +171,6 @@ $(".phone").mouseleave(function(e) {
     $('.application-instructions-container').show();
   });
 
-
-$('.thermalCol').click(function(){
-  $('.thermal-parallax').show();
-});
-$('.fireCol').click(function(){
-  $('.fire-parallax').show();
-});
-$('.coCol').click(function(){
-  $('.corrosion-parallax').show();
-});
-
 var amountScrolled = 2000;
 
 $(window).scroll(function() {
@@ -188,6 +179,12 @@ $(window).scroll(function() {
 	} else {
 		$('a.back-to-top').fadeOut('slow');
 	}
+});
+$('a.back-to-top').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
 });
 
 });
