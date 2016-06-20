@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  
+
   $('.mainContent-container video').on('click', function() {
       console.log("Hi");
     });
@@ -146,20 +146,22 @@ $(".phone").mouseleave(function(e) {
 
   $('.certifications').click(function(){
     $('.certifications-container').show();
+    $('.picture-container').hide();
     $('#tds-pdf').hide();
     $('.application-instructions-container').hide();
     $('.project-videos-container').hide();
   });
   $('.project-pictures').click(function(){
     $('.picture-container').show();
-    $('.mainContainer').hide();
+    $('.main-container').hide();
     $('#tds-pdf').hide();
     $('.application-instructions-container').hide();
     $('.certifications-container').hide();
     $('.project-videos-container').hide();
   });
   $('.project-videos').click(function(){
-    $('.mainContainer').hide();
+    $('.main-container').hide();
+    $('.picture-container').hide();
     $('#tds-pdf').hide();
     $('.application-instructions-container').hide();
     $('.certifications-container').hide();
@@ -167,6 +169,7 @@ $(".phone").mouseleave(function(e) {
   });
 
   $('.application-instructions').click(function(){
+    $('.picture-container').hide();
     $('#tds-pdf').hide();
     $('.certifications-container').hide();
     $('.application-instructions-container').show();

@@ -776,7 +776,7 @@ td.before-message {
 }
 
 
-.mainContainer p {
+.main-container p {
   font-size: 1.9em;
   padding: 30px;
 }
@@ -929,14 +929,14 @@ table {
   }
 }
 
-.right-main {
+.right {
   padding: 1em 1em 1em 53%;
   h4 {
     padding: 1em 10em 1em 0%;
   }
 }
 
-.right {
+.rightold {
   padding: 1em 0 1em 53%;
   margin: 1% 1% 1% 50%;
   background-position: 0 50%;
@@ -970,6 +970,18 @@ table {
   background-size: 49% auto;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  top: 10%;
+  h1 {
+    text-align: justify;
+  }
+  h4 {
+    text-align: justify;
+  }
+  p {
+    font-size: 3em !important;
+    width: 28em;
+    text-align: justify;
+  }
 }
 
 /* .main-parallax2 instead of .content-main */
@@ -990,18 +1002,18 @@ table {
   text-align: center;
 }
 
-.supertherm-1  {
-  margin: 2% 0 0 0%;
+.p1  {
+  margin: 4% 0 0 0%;
   background-attachment: fixed;
-  background: url("../images/supertherm-12.jpg") no-repeat fixed 6.2% 70%;
+  background: url("../images/supertherm-12.jpg") no-repeat fixed 6.2% 50%;
   background-size: 900px;
 }
-.supertherm-2 {
+.p2 {
   margin: 0 0 0 0;
   background: rgba(129, 80, 16, 0.69) url("../images/tc4.jpeg") no-repeat fixed 95% 50%;
   background-size: 900px;
 }
-.supertherm-3 {
+.p3 {
   background-attachment: fixed;
   background-position: 0% 57%;
   z-index: -10;
@@ -1009,62 +1021,50 @@ table {
   background: grey url("../images/rg-10.jpg") no-repeat fixed 6.2% 70%;
   background-size: 900px;
 }
-.supertherm-4 {
+.p4 {
   margin: 0 0 0 0;
   background: white url("../images/rg-4.jpg") no-repeat fixed 95% 50%;
   background-size: 900px;
 }
 
+.supertherm-1 {
+
+}
+.supertherm-2 {
+
+}
+.supertherm-3 {
+
+}
+.supertherm-4 {
+
+}
+
 .rustgrip-1 {
-  width: 92%;
-  margin: 2% 0 0 5%;
-  background-attachment: fixed;
-  background-position: 2% 67%;
   background-image: url("../images/rg-1.jpg");
-  z-index: -10;
 }
 .rustgrip-2 {
-  margin: 0 0 0 0;
-  background-color: rgba(129, 80, 16, 0.69);
   background-image: url("../images/rg-2.jpg");
 }
 .rustgrip-3 {
-  margin: 0 0 0 0;
-  background-color: grey;
   background-image: url("../images/rg-7.jpg");
 }
 .rustgrip-4 {
-  margin: 0 0 0 0;
-  background-color: white;
   background-image: url("../images/rg-4.jpg");
 }
 
 .hotpipe-1 {
-  width: 92%;
-  margin: 2% 0 0 5%;
-  background-attachment: fixed;
-  background-position: 2% 67%;
   background-image: url("../images/hp-1.jpeg");
   z-index: -10;
 }
 .hotpipe-2 {
-  margin: 0 0 0 0;
-  background-color: rgba(129, 80, 16, 0.69);
   background-image: url("../images/hp-2.jpg");
 }
 .hotpipe-3 {
-  margin: 0 0 0 0;
-  background-color: grey;
   background-image: url("../images/hp-3.jpg");
 }
 .hotpipe-4 {
-  margin: 0 0 0 0;
-  background-color: white;
   background-image: url("../images/hp-4.jpeg");
-}
-
-.supertherm-1-1 {
-  background-image: url("../images/.jpg");
 }
 
 h1,h2,h3,h4,h5,h6 {
