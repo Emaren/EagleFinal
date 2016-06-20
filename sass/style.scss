@@ -63,7 +63,7 @@ a:hover, a:active {
   }
 }
 
-hr {
+hr.style-one {
   display: block !important;
   height: 1px !important;
   border-top: 1px solid black !important;
@@ -426,7 +426,7 @@ div.documents-container {
   display: inline-block;
   vertical-align: top;
   ul li {
-    padding: 0 5%;
+    padding: 0 2%;
     width: 19%;
     display: inline-block;
     text-align: center;
@@ -437,7 +437,12 @@ div.documents-container {
     text-align: center;
   }
 }
+.supertherm-tds-span {
+  position: relative;
 
+  width: 100%;
+  margin: 5%;
+}
 .tds {
   cursor: pointer;
 }
@@ -475,13 +480,46 @@ div.documents-container {
 
 // Certifications
 
-.supertherm-certifications-container {
-}
-
-
+.certifications-container {
 table {
   width: 90%;
   font-size: 1.1em;
+  th {
+    height: 100px;
+  }
+  img {
+    height: 100px;
+    margin: 0 5% 0 5%;
+  }
+  td:nth-child(1) {
+    width: 15%;
+    padding: 0 0;
+    height: auto;
+    line-height: 100%;
+    text-align: center;
+  }
+  td:nth-child(2) {
+    width: 75%;
+    padding: 0 5%;
+    height: 50px;
+  }
+  td:nth-child(3) {
+    width: 10%;
+    padding: 0 5%;
+    height: 50px;
+  }
+  td:hover {
+    background-color: rgba(134, 97, 16, 0.32);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  td:nth-child(3) {
+    text-align: center;
+  }
+  ul li {
+    list-style: none;
+  }
+}
 }
 
 td.before-message {
@@ -494,48 +532,10 @@ td.before-message {
   font-weight: 600;
 }
 
-table tr {
-}
 
-table tr th {
-  height: 100px;
-}
-
-table tr td img {
-  height: 100px;
-  margin: 0 5% 0 5%;
-}
-
-table tr td:nth-child(1) {
-  width: 15%;
-  padding: 0 0;
-  height: auto;
-  line-height: 100%;
-  text-align: center;
-}
-table tr td:nth-child(2) {
-  width: 75%;
-  padding: 0 5%;
-  height: 50px;
-}
-table tr td:nth-child(3) {
-  width: 10%;
-  padding: 0 5%;
-  height: 50px;
-}
-table tr td:hover {
-  background-color: rgba(134, 97, 16, 0.32);
-  border-radius: 50px;
-  cursor: pointer;
-}
-table tr td:nth-child(3) {
-  text-align: center;
-}
-table ul li {
-  list-style: none;
-}
 
 // Database
+
 
 .products-container {
   font-size: 1.5em;
@@ -602,12 +602,30 @@ table ul li {
     position: relative;
     float: right;
     line-height: 50%;
-    margin: -2.4% 3% 0 0;
+    margin: -2% 3% 0 -2%;
     font-size: .5em;
     font-style: italic;
   }
+  .description-too-big {
+    position: relative;
+    float: right;
+    line-height: 50%;
+    margin: .3% 3% 0 -2%;
+    font-size: .5em;
+    font-style: italic;
+  }
+  img {
+    position: relative;
+    float: right;
+    margin: -1.6% 2% 0 -50px;
+
+  }
   h4 {
     line-height: 90%;
+  }
+  .too-big {
+    font-size: 1em !important;
+    line-height: 105% !important;
   }
   p {
     font-size: 1em;
@@ -757,9 +775,108 @@ table ul li {
   font-size: .39em;
 }
 
+
 .mainContainer p {
   font-size: 1.9em;
   padding: 30px;
+}
+
+
+
+
+// Project Pictures
+
+.picture-container {
+  display: none;
+}
+
+.pic-group-heading {
+  display: block;
+  font-size: 2em;
+  margin: 3% 2% 2% 2%;
+  font-family: 'Raleway';
+  text-align: center;
+}
+
+
+div.panel:last-child {
+  // display: none;
+  margin-bottom: 2%;
+  // padding: 10%;
+}
+.center {
+
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.panel {
+  h4 {
+    text-align: center;
+  }
+}
+
+.eagle {
+  background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(193, 136, 50, .3), gray); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, rgba(193, 136, 50, .3), gray); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, rgba(193, 136, 50, .3), gray); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, rgba(193, 136, 50, .2), gray); /* Standard syntax */
+}
+
+.eagle-body {
+  background: grey; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, gray, white, gray); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, gray, white, gray); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, gray, white, gray); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, white,white); /* Standard syntax */
+}
+
+.panel-title {
+  text-align: center;
+}
+
+figure { /* Then you can center your img inside the figure element */
+  text-align: center;
+}
+
+.panel-img {
+  display: inline;
+}
+
+.panel-body {
+  p {
+    text-align: justify;
+    :hover {
+      background-color: rgb(173, 165, 153);
+      border-radius: 2%;
+      background: grey; /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(left top, rgba(193, 136, 50, .3), gray); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(bottom right, rgba(193, 136, 50, .3), gray); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(bottom right, rgba(193, 136, 50, .3), gray); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to bottom right, rgba(193, 136, 50, .2), gray); /* Standard syntax */
+    }
+  }
+  img {
+    text-align: center;
+    margin: 2%;
+    width: 7.25em;
+    height: 8.25em;
+  }
+  .photos {
+    position: relative;
+    float: right;
+    margin: 10% 1% 0 0;
+
+  }
+}
+
+.img-table {
+table {
+
+}
 }
 
 
@@ -973,7 +1090,7 @@ h3 {
   font-size: 1.1em;
 }
 h4 {
-font-size: 2em !important;
+font-size: 1.2em !important;
 font-family: 'Raleway';
 margin: 1.313em 0;
 }

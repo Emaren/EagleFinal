@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+  
   $('.mainContent-container video').on('click', function() {
       console.log("Hi");
     });
@@ -151,6 +151,7 @@ $(".phone").mouseleave(function(e) {
     $('.project-videos-container').hide();
   });
   $('.project-pictures').click(function(){
+    $('.picture-container').show();
     $('.mainContainer').hide();
     $('#tds-pdf').hide();
     $('.application-instructions-container').hide();
